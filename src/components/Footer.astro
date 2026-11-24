@@ -1,0 +1,30 @@
+---
+
+---
+
+<footer class="footer container">
+  <p> Narcis Aducovschi · Portfolio</p>
+</footer>
+
+<style>
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    padding-block: 24px;
+    border-top: 1px solid var(--color-border);
+    font-size: 12px;
+    color: var(--color-muted);
+  }
+
+  .footer span {
+    color: var(--color-purple);
+  }
+
+  @media (max-width: 600px) {
+    .footer {
+      flex-direction: column;
+      gap: 6px;
+    }
+  }
+</style>
