@@ -1,5 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Contact from "../components/Contact.astro";
 
 const technologies = [
     {
@@ -92,21 +93,7 @@ const technologies = [
             </p>
         </div>
     </section>
-
-    <section
-        id="contacto"
-        class="contact container"
-        aria-labelledby="contact-title"
-    >
-        <h2 id="contact-title">
-            ¿<em class="accent">Hablamos</em>?
-        </h2>
-
-        <div>
-            <p>Me encantará conocer a tu equipo.</p>
-            <p class="contact-note">Contacto pendiente de configurar.</p>
-        </div>
-    </section>
+    <Contact />
 </Layout>
 
 <style>

@@ -1,263 +1,255 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Contact from "../components/Contact.astro";
 ---
 
 <Layout title="Narcis Aducovschi — Desarrollador Full Stack">
-  <section class="intro container" aria-labelledby="intro-title">
-    <h1 id="intro-title">
-      Narcis Aducovschi
-      <span class="accent">Full Stack Developer</span>
-    </h1>
-  </section>
+	<section class="intro container" aria-labelledby="intro-title">
+		<h1 id="intro-title">
+			Narcis Aducovschi
+			<span class="accent">Full Stack Developer</span>
+		</h1>
+	</section>
 
-  <section
-    id="experiencia"
-    class="experience container"
-    aria-labelledby="experience-title"
-  >
-    <h2 id="experience-title">Experiencia</h2>
+	<section
+		id="experiencia"
+		class="experience container"
+		aria-labelledby="experience-title"
+	>
+		<h2 id="experience-title">Experiencia</h2>
 
-    <article class="experience-item">
-      <p class="experience-date">
-        marzo 2026 - junio 2026
-      </p>
+		<article class="experience-item">
+			<p class="experience-date">marzo 2026 - junio 2026</p>
 
-      <div class="experience-content">
-        <h3>Programador RPG (Prácticas)</h3>
+			<div class="experience-content">
+				<h3>Programador RPG (Prácticas)</h3>
 
-        <p class="experience-company">SEIDOR</p>
+				<p class="experience-company">SEIDOR</p>
 
-        <p class="experience-description">
-          Durante mis prácticas formativas en SEIDOR, desarrollé una
-          aplicación CRUD desde cero en un entorno IBM i, utilizando
-          RPG, SQL, DB2 y SDA.
-        </p>
+				<p class="experience-description">
+					Durante mis prácticas formativas en SEIDOR, desarrollé una
+					aplicación CRUD desde cero en un entorno IBM i, utilizando
+					RPG, SQL, DB2 y SDA.
+				</p>
 
-        <ul class="experience-tasks">
-          <li>
-            Implementé operaciones de consulta, creación, modificación
-            y eliminación de registros.
-          </li>
-          <li>
-            Programé la lógica de la aplicación y gestioné los datos
-            con SQL y DB2.
-          </li>
-          <li>
-            Creé pantallas e interfaces con SDA para interactuar
-            con la aplicación.
-          </li>
-          <li>
-            Resolví errores y realicé pruebas para comprobar el
-            funcionamiento de las funcionalidades.
-          </li>
-        </ul>
+				<ul class="experience-tasks">
+					<li>
+						Implementé operaciones de consulta, creación,
+						modificación y eliminación de registros.
+					</li>
+					<li>
+						Programé la lógica de la aplicación y gestioné los datos
+						con SQL y DB2.
+					</li>
+					<li>
+						Creé pantallas e interfaces con SDA para interactuar con
+						la aplicación.
+					</li>
+					<li>
+						Resolví errores y realicé pruebas para comprobar el
+						funcionamiento de las funcionalidades.
+					</li>
+				</ul>
 
-        <ul class="technologies" aria-label="Tecnologías utilizadas">
-          <li>RPG III</li>
-          <li>RPG IV</li>
-          <li>SQL</li>
-          <li>DB2</li>
-          <li>SDA</li>
-        </ul>
-      </div>
-    </article>
-  </section>
+				<ul class="technologies" aria-label="Tecnologías utilizadas">
+					<li>RPG III</li>
+					<li>RPG IV</li>
+					<li>SQL</li>
+					<li>DB2</li>
+					<li>SDA</li>
+				</ul>
+			</div>
+		</article>
+	</section>
 
-  <section
-    id="proyectos"
-    class="placeholder container"
-    aria-labelledby="projects-title"
-  >
-    <h2 id="projects-title">Proyectos</h2>
-    <p>Próximamente: lo que estoy construyendo.</p>
-  </section>
+	<section
+		id="proyectos"
+		class="placeholder container"
+		aria-labelledby="projects-title"
+	>
+		<h2 id="projects-title">Proyectos</h2>
+		<p>Próximamente: lo que estoy construyendo.</p>
+	</section>
 
-  <section
-    id="contacto"
-    class="placeholder container"
-    aria-labelledby="contact-title"
-  >
-    <h2 id="contact-title">¿Hablamos?</h2>
-    <p>Contacto pendiente de configurar.</p>
-  </section>
+	<Contact />
 </Layout>
 
 <style>
-  /* Presentación */
+	/* Presentación */
 
-  .intro {
-    padding-block: 88px 96px;
-  }
+	.intro {
+		padding-block: 88px 96px;
+	}
 
-  h1 {
-    margin: 0;
-    font-size: clamp(42px, 7.5vw, 100px);
-    font-weight: 700;
-    line-height: 1.08;
-    letter-spacing: -0.055em;
-    overflow-wrap: anywhere;
-  }
+	h1 {
+		margin: 0;
+		font-size: clamp(42px, 7.5vw, 100px);
+		font-weight: 700;
+		line-height: 1.08;
+		letter-spacing: -0.055em;
+		overflow-wrap: anywhere;
+	}
 
-  h1 .accent {
-    display: block;
-    margin-top: 12px;
-    color: var(--color-purple);
-    font-family: var(--font-accent);
-    font-size: 0.85em;
-    font-weight: 400;
-    font-style: italic;
-    letter-spacing: -0.035em;
-  }
+	h1 .accent {
+		display: block;
+		margin-top: 12px;
+		color: var(--color-purple);
+		font-family: var(--font-accent);
+		font-size: 0.85em;
+		font-weight: 400;
+		font-style: italic;
+		letter-spacing: -0.035em;
+	}
 
-  /* Estilos compartidos */
+	/* Estilos compartidos */
 
-  section[id] {
-    scroll-margin-top: 32px;
-  }
+	section[id] {
+		scroll-margin-top: 32px;
+	}
 
-  h2 {
-    margin: 0;
-    font-size: clamp(28px, 4vw, 42px);
-    font-weight: 600;
-    line-height: 1.2;
-    letter-spacing: -0.04em;
-  }
+	h2 {
+		margin: 0;
+		font-size: clamp(28px, 4vw, 42px);
+		font-weight: 600;
+		line-height: 1.2;
+		letter-spacing: -0.04em;
+	}
 
-  /* Experiencia */
+	/* Experiencia */
 
-  .experience {
-    padding-block: 48px 72px;
-    border-top: 1px solid var(--color-border);
-  }
+	.experience {
+		padding-block: 48px 72px;
+		border-top: 1px solid var(--color-border);
+	}
 
-  .experience-item {
-    display: grid;
-    grid-template-columns: 220px minmax(0, 1fr);
-    gap: 32px;
-    margin-top: 32px;
-    padding-block: 24px;
-  }
+	.experience-item {
+		display: grid;
+		grid-template-columns: 220px minmax(0, 1fr);
+		gap: 32px;
+		margin-top: 32px;
+		padding-block: 24px;
+	}
 
-  .experience-item + .experience-item {
-    border-top: 1px solid var(--color-border);
-  }
+	.experience-item + .experience-item {
+		border-top: 1px solid var(--color-border);
+	}
 
-  .experience-date {
-    margin: 0;
-    padding-top: 5px;
-    font-size: 13px;
-    color: var(--color-muted);
-  }
+	.experience-date {
+		margin: 0;
+		padding-top: 5px;
+		font-size: 13px;
+		color: var(--color-muted);
+	}
 
-  .experience-content {
-    min-width: 0;
-  }
+	.experience-content {
+		min-width: 0;
+	}
 
-  .experience-content h3 {
-    margin: 0;
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 1.3;
-    letter-spacing: -0.025em;
-  }
+	.experience-content h3 {
+		margin: 0;
+		font-size: 24px;
+		font-weight: 600;
+		line-height: 1.3;
+		letter-spacing: -0.025em;
+	}
 
-  .experience-company {
-    margin: 6px 0 0;
-    font-size: 15px;
-    color: var(--color-purple);
-  }
+	.experience-company {
+		margin: 6px 0 0;
+		font-size: 15px;
+		color: var(--color-purple);
+	}
 
-  .experience-description {
-    max-width: 65ch;
-    margin: 20px 0 0;
-    font-size: 15px;
-    line-height: 1.75;
-    color: var(--color-muted);
-  }
+	.experience-description {
+		max-width: 65ch;
+		margin: 20px 0 0;
+		font-size: 15px;
+		line-height: 1.75;
+		color: var(--color-muted);
+	}
 
-  .experience-tasks {
-    max-width: 65ch;
-    margin: 16px 0 0;
-    padding-left: 20px;
-    font-size: 15px;
-    line-height: 1.75;
-    color: var(--color-muted);
-  }
+	.experience-tasks {
+		max-width: 65ch;
+		margin: 16px 0 0;
+		padding-left: 20px;
+		font-size: 15px;
+		line-height: 1.75;
+		color: var(--color-muted);
+	}
 
-  .experience-tasks li + li {
-    margin-top: 10px;
-  }
+	.experience-tasks li + li {
+		margin-top: 10px;
+	}
 
-  .experience-tasks li::marker {
-    color: var(--color-purple);
-  }
+	.experience-tasks li::marker {
+		color: var(--color-purple);
+	}
 
-  .technologies {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin: 24px 0 0;
-    padding: 0;
-    list-style: none;
-  }
+	.technologies {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 8px;
+		margin: 24px 0 0;
+		padding: 0;
+		list-style: none;
+	}
 
-  .technologies li {
-    padding: 5px 13px;
-    border: 1px solid var(--color-border);
-    border-radius: 999px;
-    font-size: 12px;
-    line-height: 1.5;
-  }
+	.technologies li {
+		padding: 5px 13px;
+		border: 1px solid var(--color-border);
+		border-radius: 999px;
+		font-size: 12px;
+		line-height: 1.5;
+	}
 
-  /* Proyectos y contacto provisionales */
+	/* Proyectos y contacto provisionales */
 
-  .placeholder {
-    padding-block: 48px 64px;
-    border-top: 1px solid var(--color-border);
-  }
+	.placeholder {
+		padding-block: 48px 64px;
+		border-top: 1px solid var(--color-border);
+	}
 
-  .placeholder p {
-    margin: 16px 0 0;
-    font-size: 15px;
-    color: var(--color-muted);
-  }
+	.placeholder p {
+		margin: 16px 0 0;
+		font-size: 15px;
+		color: var(--color-muted);
+	}
 
-  /* Adaptación a móvil */
+	/* Adaptación a móvil */
 
-  @media (max-width: 700px) {
-    .intro {
-      padding-block: 56px 64px;
-    }
+	@media (max-width: 700px) {
+		.intro {
+			padding-block: 56px 64px;
+		}
 
-    h1 .accent {
-      margin-top: 16px;
-      font-size: 0.8em;
-    }
+		h1 .accent {
+			margin-top: 16px;
+			font-size: 0.8em;
+		}
 
-    .experience,
-    .placeholder {
-      padding-block: 32px 40px;
-    }
+		.experience,
+		.placeholder {
+			padding-block: 32px 40px;
+		}
 
-    .experience-item {
-      grid-template-columns: 1fr;
-      gap: 12px;
-      margin-top: 24px;
-      padding-block: 16px;
-    }
+		.experience-item {
+			grid-template-columns: 1fr;
+			gap: 12px;
+			margin-top: 24px;
+			padding-block: 16px;
+		}
 
-    .experience-date {
-      padding-top: 0;
-      font-size: 12px;
-    }
+		.experience-date {
+			padding-top: 0;
+			font-size: 12px;
+		}
 
-    .experience-content h3 {
-      font-size: 22px;
-    }
+		.experience-content h3 {
+			font-size: 22px;
+		}
 
-    .experience-description,
-    .experience-tasks {
-      font-size: 14px;
-    }
-  }
+		.experience-description,
+		.experience-tasks {
+			font-size: 14px;
+		}
+	}
 </style>
